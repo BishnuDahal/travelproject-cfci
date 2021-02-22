@@ -1,5 +1,4 @@
 body {
-  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -8,12 +7,12 @@ body {
 }
 .App {
   align-items: center;
+  overflow-x: hidden;
 }
 .nav {
-  width:96vw;
+  width:100vw;
   position: sticky;
   top: 0;
-  margin: auto;
   margin-top: 6px;
   z-index: 999;
 }
@@ -29,14 +28,17 @@ body {
 .rec.rec-dot {
   visibility: hidden;
 }
-.MuiButton-root {
+/* .MuiButton-root {
   border-radius: 10px !important;
-} 
+}  */
+
 .main_button {
-  background-image: linear-gradient(#f4af2f, #ffb732, #f29807, #f59430, #f59730, #f6a92f);
+  background-image: linear-gradient(to right, #f4af2f, #f4af1f, #f29807, #f59430, #ffb732, #f59730, #f6a92f);
   color: #000000;
-  border-radius: 8px;
   padding: 3px;
+  width: 50%;
+  display: flex !important;
+  margin: auto !important;
 }
 .main_button:hover {
   background-color: #f29807;
@@ -81,7 +83,7 @@ body {
   display:flex !important;
 }
 .DayPicker_transitionContainer {
-  margin-top: -240px;
+  margin-top: -200px;
 }
 /* .DateRangePickerInput__withBorder {
   border: 0.8px solid gray !important;
@@ -93,3 +95,6 @@ body {
 .DateRangePickerInput_arrow_svg {
   margin: 5px;
 }
+/* .galrjd {
+  width: 360px !important;
+} */

@@ -21,15 +21,15 @@ export default function TravelLandingPage() {
       <Grid container spacing={3} className={classes.landingpagecontent}>
         <Grid item className={classes.landingcontent} xs={12} sm={6} lg={6}>
           <Typography variant="h4">
-            THE AIR SMELLS SWEETER
-            <Box display="flex" justifyContent="start">
+            {/* THE AIR SMELLS SWEETER */}
+            {/* <Box display="flex" justifyContent="start">
               <Box {...defaultProps} borderTop={1} />
-            </Box>
+            </Box> */}
           </Typography>
           <Typography variant="subtitle1" className={classes.subtitle}>
-            Whether you call it nature travel, sustainable travel or responsible
+            {/* Whether you call it nature travel, sustainable travel or responsible
             ecotourism, there’s something incredibly potent, powerful, and
-            cleansing about getting away from the hustle and bustle of the city.
+            cleansing about getting away from the hustle and bustle of the city. */}
           </Typography>
         </Grid>
         <Grid item className={classes.landingformcontent} xs={12} sm={6} lg={6}>

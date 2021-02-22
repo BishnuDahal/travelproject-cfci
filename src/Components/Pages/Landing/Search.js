@@ -39,6 +39,7 @@ export default function Search() {
   }, [open]);
     return (
         <div>
+          <label>Search Country/Place</label><br/><br/>
 <Autocomplete
       id="asynchronous-demo"
       open={open}
@@ -58,7 +59,7 @@ export default function Search() {
           {...params}
           size="small"
           variant="outlined"
-          label="Search"
+          // label="Search"
           InputProps={{
             ...params.InputProps,
             endAdornment: (

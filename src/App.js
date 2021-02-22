@@ -1,29 +1,41 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Components/Header";
+// import Header from "./Components/Header";
 import Nabbar from "./Components/Nabbar";
 import Login from "./Components/Login";
 import TravelLanding from "./Components/Pages/Landing/TravelLanding";
+import SearchHotel from "./Components/Pages/Landing/SearchHotel";
 import LoginForm from "./Components/LogInForm";
-import HotelList from "./Components/Pages/Hotel/HotelList";
+// import HotelList from "./Components/Pages/Hotel/HotelList";
 import SignUp from "./Components/Login/SignUp";
 import HotelSection from "./Components/Pages/Hotel/HotelSection";
-import AttractionSection from "./Components/Pages/Attraction/AttractionSection";
-import Light from "./Components/Pages/Light/Light";
-import RecentPlace from "./Components/Pages/Recent/RecentPlace";
+// import AttractionSection from "./Components/Pages/Attraction/AttractionSection";
+// import Light from "./Components/Pages/Light/Light";
+// import RecentPlace from "./Components/Pages/Recent/RecentPlace";
 import Footer from "./Components/Footer/Footer";
 import Megal from "./Components/Megal";
-import AboutIndex from "./Components/Pages/About/AboutIndex";
+// import AboutIndex from "./Components/Pages/About/AboutIndex";
 import Check from "./Components/Check";
+import SinglePage from "./Components/SinglePage/SinglePage";
+import SingleApiData from "./Components/SinglePage/SingleApiData";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Nabbar />
         <Switch>
+        <Route exact path="/singleapidata">
+           <SingleApiData />
+          </Route>
+          <Route exact path="/singlepage">
+            <SinglePage />
+          </Route>
+        <Route exact path="/searchhotel">
+            <SearchHotel />
+          </Route>
           <Route exact path="/hotelsection">
             <HotelSection />
           </Route>
@@ -47,15 +59,15 @@ function App() {
           </Route>
           <Route path="/">
             <TravelLanding />
-            <AboutIndex />
+            {/* <AboutIndex />
             <HotelSection />
             <AttractionSection />
             <HotelList />
             <RecentPlace />
-            <Light />
+            <Light />  */}
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

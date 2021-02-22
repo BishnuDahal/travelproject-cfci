@@ -10,17 +10,20 @@ const useHotelListStyles = makeStyles((theme) => ({
   hotellist: {
          position: 'relative',
          overflow: 'hidden',
-         width: '98%',
+        //  width: '98%',
          margin: 'auto',
          alignItems: 'center',
          padding: theme.spacing(3),
+         display: 'flex',
      },
 }))
 
-export default function OfferCardUnit() {
+
+export default function HotelList() {
+   const classes = useHotelListStyles();
     const [value, setValue] = useState();
-    const [items, setItems] = useState([]);
-    const classes = useHotelListStyles();
+    const [items, setItems] = useState([{}]);
+    const [isLoading, setIsLoading] = useState(false)
 
     const enteredData = {
       checkout: '2019-12-21',
@@ -32,29 +35,39 @@ export default function OfferCardUnit() {
 }
 
 useEffect( () => {
-   axios({
+  setIsLoading(true) 
+  axios({
       method: 'POST',
       url: "/booking/api/first_hotel_list/",
       headers: {
           "Authorization": "Token 03613e85a33fd6152c1399f68753d7840fb71eb0",
-          "Content-Type": "application/x-www-form-urlencoded"
+           "Content-Type": "application/x-www-form-urlencoded"
       },
       data: qs.stringify(enteredData)
   })
   .then(res => 
-     setItems(res.data.data)
+     {
+       console.log(res.data.hotel_list)
+       setItems(res.data.hotel_list)
+     setIsLoading(false)
+    }
   )
-}, [])
-console.log(items, "hotelitemsreceived");
-        
+}, [])  
     return (
-      <div>
-        {/* // <div className={classes.hotellist}>  */}
-           {items.map(item => <div
-            key={item.hotel.cino}>
-              <CardSection  cardItem = {item} />
-    </div>
-    )}
-        </div>
+    <div className={classes.hotellist}>  
+   {isLoading === true ? <p>loading</p> : (
+      <>
+  {items.length>0 ? (
+    <>
+{/* {items.map(item => ( */}
+<CardSection items={items} />
+{/* ))} */}
+    </>
+  
+  ) : null}
+</>
+   )} 
+</div>
     )
+    
 }

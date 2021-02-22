@@ -4,12 +4,13 @@ import { DateRangePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import './react_dates_overrides.css';
+import moment from "moment";
 
 
 export default function DateRange() {
     const [dateRange, setDateRange] = useState({
-        startDate: null,
-        endDate: null
+        startDate: moment(),
+        endDate: moment().add(2, "days")
       });
       const [focus, setFocus] = useState(null);
     
@@ -19,6 +20,7 @@ export default function DateRange() {
     //   setDateRange({startDate, endDate})
     return (
         <div>
+          <label>Check In/ Check Out</label><br/><br/>
             <DateRangePicker 
             variant="outlined"
             label="Check In /Check Out"

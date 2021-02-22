@@ -125,14 +125,14 @@ export default function ButtonAppBar() {
            >
             <MenuIcon />
             </IconButton>
-            <CardMedia
+            {/* <CardMedia
           component="img"
           className={classes.cardmedia}
           alt="Contemplative Reptile"
           height="auto"
           image="/images/logo.jpg"
           title="Contemplative Reptile"
-        />
+        /> */}
           <Typography variant="h6" className={classes.title}>
           <ul className= {classes.menu} >
             <Link to="/" className= {classes.menu_link}>Home</Link>
@@ -144,7 +144,7 @@ export default function ButtonAppBar() {
           </Typography>
           <Button className={classes.icon} >
             </Button>
-            <span className="main_button"><Button  href="/signup" ><PersonIcon /> </Button></span>
+          <PersonIcon style={{ color:"#f4af1f" }}/><Link to="/" className= {classes.menu_link} style={{fontSize: "14px"}}>LOGIN</Link>
         </Toolbar>
         </AppBar>
         <Drawer

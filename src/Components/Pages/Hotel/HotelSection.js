@@ -23,10 +23,9 @@ export default function HotelSection() {
                 style={{ width: "100%", margin: "auto", objectFit: "contain" }}
               >
                 <HotelContent classes={classes} />
-
                 <div className={classes.hotellistcontent}>
-                  <HotelList classes={classes} />
-                  {/* <HotelList />  */}
+                  <HotelList />
+                   {/* <HotelList />  */}
                 </div>
               </Box>
             </div>

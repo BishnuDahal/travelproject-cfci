@@ -22,6 +22,7 @@ import { makeStyles } from '@material-ui/core/styles';
     abouticon: {
         paddingRight: theme.spacing(1),
         textAlign: 'center',
+        margin: theme.spacing(1),
     },
     aboutbutton: {
         backgroundColor: '#f6a82f',

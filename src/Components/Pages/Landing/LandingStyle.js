@@ -1,12 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
-import travelImage from '../../assets/travelImage.jpg'
+import light5 from '../../assets/light5.jpg'
 
 const useTravelLandingPageStyles = makeStyles((theme) => ({
     travellandingpage: {
         position: 'relative',
-        width: "96vw",
-        height: "80vh",
-        margin: 'auto',
+        height: "90vh",
         [theme.breakpoints.down('sm')]: {
            height: '100vh',
           },
@@ -17,7 +15,7 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
        height: '115%',
        position:'absolute',
        top:'-18%',
-       backgroundImage:`url(${travelImage})`,
+       backgroundImage:`url(${light5})`,
        backgroundRepeat: 'no-repeat',
        backgroundSize: 'cover',
        backgroundPosition: 'center',
@@ -53,7 +51,7 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
     maxWidth: '320px',
     // width: "100%",
     //  maxHeight: '800px',
-     padding: theme.spacing(4),
+     padding: theme.spacing(3),
      alignItems: "center",
      background: '#fff',
      borderRadius: '10px',
@@ -77,7 +75,17 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
         backgroundColor: '#000000',
         opacity: 0.4,
         zIndex:  '1',
- }
+ },
+ abouticon: {
+  paddingRight: theme.spacing(1),
+  textAlign: 'center',
+  marginRight: theme.spacing(1),
+},
+aboutbutton: {
+  backgroundColor: '#f6a82f',
+  borderRadius: '50%',
+  padding: '10px',
+},
 }))
 
 export default useTravelLandingPageStyles;

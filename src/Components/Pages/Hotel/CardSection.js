@@ -13,41 +13,40 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useCardHotelStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 300,
+        maxWidth: 345,
         margin: theme.spacing(1),
-        backgroundColor: '#e2e1e0',
+        backgroundColor: '#fff',
      },
 }))
-
-
 const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 360, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 600, itemsToShow: 3 },
-    { width: 900, itemsToShow: 4 }
-     ]
+  { width: 1, itemsToShow: 1 },
+  { width: 360, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 600, itemsToShow: 3 },
+  { width: 900, itemsToShow: 4 }
+   ]
 
-export default function ImgMediaCard({cardItem}) {
-    const classes = useCardHotelStyles();
-  console.log(cardItem, 'cardsection')
+
+export default function CardSection({items}) {
+  const classes = useCardHotelStyles();
+  console.log(items, 'cardsection')
   const [value, setValue] = useState(2);
 
   return (
       <>
-      <Carousel breakPoints={breakPoints} className={classes.carasoul} >
-    {cardItem.gallery.map((sub) => ( <div>
+         <Carousel breakPoints={breakPoints} className={classes.carasoul} >
+        {items.map(item => ( 
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image={sub.image}
+          image={item.image}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {cardItem.hotel.name} {''} 
+            {item.name} {''} 
           </Typography>
           <Box component="fieldset" ml={-3} borderColor="transparent">
         <Rating
@@ -57,13 +56,13 @@ export default function ImgMediaCard({cardItem}) {
             setValue(newValue);
           }}
         />
-         <b>{cardItem.hotel.star_rating}</b>
+         <b>{item.star_rating}</b>
       </Box>
           <Typography variant="body2" color="textSecondary" component="p">
-          {cardItem.hotel.description}
+          {item.id}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          <b>Starting NPR</b> <span style={{color: "blue"}}><b>{cardItem.hotel.ratefornepali}</b></span><br/>
+          <b>Starting NPR</b> <span style={{color: "blue"}}><b>{item.ratefornepali}</b></span><br/>
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -74,9 +73,8 @@ export default function ImgMediaCard({cardItem}) {
         <Button className= "main_button">Book</Button>
       </CardActions>
     </Card>
-    </div>
     ))}
-    </Carousel>
+    </Carousel> 
     </>
   );
 }

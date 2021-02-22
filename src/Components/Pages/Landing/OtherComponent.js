@@ -1,15 +1,17 @@
 import React, {useState} from 'react'
 import TextField from '@material-ui/core/TextField';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import RoomServiceIcon from '@material-ui/icons/RoomService';
-import ChildCareIcon from '@material-ui/icons/ChildCare';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
+// import AccountCircle from '@material-ui/icons/AccountCircle';
+// import InputAdornment from '@material-ui/core/InputAdornment';
+// import RoomServiceIcon from '@material-ui/icons/RoomService';
+// import ChildCareIcon from '@material-ui/icons/ChildCare';
+// import PersonPinIcon from '@material-ui/icons/PersonPin';
 
 
 export default function OtherComponent() {
     return (
-        <div>
+        <div style={{display: "flex", flexWrap:"nowrap"}}>
+            <div>
+             <left><label>Adults</label></left><br/>
             <TextField
     type="number"
     variant="outlined"
@@ -24,11 +26,13 @@ export default function OtherComponent() {
         //     </InputAdornment>
         //   ),
     }}
-    label="Adults"
-    style={{width: 79, margin: "4px"}}
+    // label="Adults"
+    style={{width: 96, margin: "10px 10px 0px 0px"}}
     size="small"
     
-/> {""}
+/> </div>{""}
+<div>
+<left><label>Childs</label></left><br/>
 <TextField
     type="number"
     variant="outlined"
@@ -43,11 +47,13 @@ export default function OtherComponent() {
         //     </InputAdornment>
         //   ),
     }}
-    label="Childs"
-    style={{width: 79, margin: "4px"}}
+    // label="Childs"
+    style={{width: 96, margin: "10px 10px 0px 0px"}}
     size="small"
  
-/> {""}
+/></div> {""}
+<div>
+    <left><label>Rooms</label></left><br/>
 <TextField
     type="number"
     variant="outlined"
@@ -62,11 +68,12 @@ export default function OtherComponent() {
         //     </InputAdornment>
         //   ),
     }}
-    label="Rooms"
-    style={{width: 79, margin: "4px"}}
+    // label="Rooms"
+    style={{width: 96, margin: "10px 10px 0px 0px"}}
     size="small"
     
-/> {""}
+/>
+</div> {""}
 {/* <TextField
     type="number"
     variant="outlined"
@@ -82,7 +89,7 @@ export default function OtherComponent() {
           ),
     }}
     label="Infant"
-    style={{width: 79, margin: "4px"}}
+    style={{width: 96 margin: "5px"}}
     size="small"
  
 /> */}
