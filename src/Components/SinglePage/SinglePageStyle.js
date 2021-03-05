@@ -21,7 +21,7 @@ const useSinglePageStyles = makeStyles((theme) => ({
       },
       gridList: {
         maxWidth: 800,
-        height: 450,
+        // height: 450,
       },
       hotelsurrounding: {
         padding: theme.spacing(2),

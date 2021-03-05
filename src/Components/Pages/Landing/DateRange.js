@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import DateRangeIcon from '@material-ui/icons/DateRange';
-import './react_dates_overrides.css';
+
 import moment from "moment";
 
 

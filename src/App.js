@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nabbar from "./Components/Nabbar";
 import Login from "./Components/Login";
 import TravelLanding from "./Components/Pages/Landing/TravelLanding";
-import SearchHotel from "./Components/Pages/Landing/SearchHotel";
 import LoginForm from "./Components/LogInForm";
 // import HotelList from "./Components/Pages/Hotel/HotelList";
 import SignUp from "./Components/Login/SignUp";
@@ -14,11 +13,12 @@ import HotelSection from "./Components/Pages/Hotel/HotelSection";
 // import Light from "./Components/Pages/Light/Light";
 // import RecentPlace from "./Components/Pages/Recent/RecentPlace";
 import Footer from "./Components/Footer/Footer";
-import Megal from "./Components/Megal";
-// import AboutIndex from "./Components/Pages/About/AboutIndex";
+//  import AboutIndex from "./Components/Pages/About/AboutIndex";
 import Check from "./Components/Check";
 import SinglePage from "./Components/SinglePage/SinglePage";
 import SingleApiData from "./Components/SinglePage/SingleApiData";
+// import GuestReview from "./Components/SinglePage/GuestsReview/GuestReview";
+import ItemsSearch from "./Components/Pages/Landing/ItemsSearch";
 
 function App() {
   return (
@@ -27,23 +27,19 @@ function App() {
         {/* <Header /> */}
         <Nabbar />
         <Switch>
+        <Route exact path="/itemssearch" render={(props) => <ItemsSearch {...props} />} />
         <Route exact path="/singleapidata">
            <SingleApiData />
+           <Footer />
           </Route>
           <Route exact path="/singlepage">
             <SinglePage />
-          </Route>
-        <Route exact path="/searchhotel">
-            <SearchHotel />
           </Route>
           <Route exact path="/hotelsection">
             <HotelSection />
           </Route>
           <Route exact path="/check">
             <Check />
-          </Route>
-          <Route exact path="/megal">
-            <Megal />
           </Route>
           <Route exact path="/footer">
             <Footer />
@@ -59,8 +55,8 @@ function App() {
           </Route>
           <Route path="/">
             <TravelLanding />
-            {/* <AboutIndex />
-            <HotelSection />
+            {/* <AboutIndex /> */}
+             {/*<HotelSection />
             <AttractionSection />
             <HotelList />
             <RecentPlace />

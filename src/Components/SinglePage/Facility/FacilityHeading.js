@@ -13,13 +13,13 @@ export default function FacilityHeading({tile}) {
             <span style={{display: "flex", background: "#f4af1f", padding: "8px" }}>
             <List>
               <ListItem>
-        <ListItemIcon><MonetizationOnIcon fontSize="large" /></ListItemIcon>
+        <ListItemIcon><MonetizationOnIcon fontSize="medium" /></ListItemIcon>
         <b>Price You Cannot Beat</b>
         </ListItem>
         </List>
         <List>
               <ListItem>
-        <ListItemIcon><SupervisedUserCircleIcon fontSize="large" /></ListItemIcon>
+        <ListItemIcon><SupervisedUserCircleIcon fontSize="medium" /></ListItemIcon>
         <b>The Staff Speak English</b>
         </ListItem>
         </List>

@@ -22,8 +22,8 @@ import PersonIcon from '@material-ui/icons/Person';
 const drawerWidth = 240;
 
 const useNabbarStyles = makeStyles((theme) => ({
-  root: {
-    position: 'realtive',
+  navroot: {
+    position: 'relative',
     flexGrow: 1,
     justifyContent: 'space-around',
     margin: 'auto',
@@ -113,8 +113,8 @@ export default function ButtonAppBar() {
 
   return (
     <div className= { root ? 'nav active' : 'nav' } >
-         {/* <CssBaseline /> */}
-    <div className={classes.root}>
+          {/* <CssBaseline />  */}
+    <div className={classes.navroot}>
       <AppBar position="static" color="transparent">
         <Toolbar>
           <IconButton 

@@ -12,7 +12,6 @@ import Price from './Price';
 import YourChoices from './YourChoices';
 import SelectRooms from './SelectRooms';
 import Sleeps from './Sleeps';
-import TableRows from './TableRow'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -40,8 +39,8 @@ const rows = [
   createData(
        '1',
       {
-          room_type: 'classic',
-       bed: '1 double bed', 
+        room_type: 'classic',
+       bed: '1 double bed 🛏 ', 
       facilities:  '🛁 Private Bathroom, 😉 Free Wifi,📺 Flat Screen Tv, 🔉 soundproofing',
       other_facilities:  '⤵  Free toiletries, ⤵  Shower, ⤵ Toilet, ⤵ Towels ,⤵ TV, ⤵ Telephone,⤵  Fan, ⤵ Carpeted, ⤵ Cable channels, ⤵ Upper floors, ⤵ accessible by stairs only Toilet paper, ⤵ Single-room air conditioning for guest accommodation',
       }, 
@@ -74,7 +73,7 @@ const rows = [
      ],
       ),
   createData( '2', 
-  {room_type: 'deluxe', bed: '1 double bed', facilities:  '🛁 Private Bathroom, 😉 Free Wifi,📺 Flat Screen Tv, 🔉 soundproofing', other_facilities:  '⤵  Free toiletries, ⤵  Shower, ⤵ Toilet, ⤵ Towels ,⤵ TV, ⤵ Telephone,⤵  Fan, ⤵ Carpeted, ⤵ Cable channels, ⤵ Upper floors, ⤵ accessible by stairs only Toilet paper, ⤵ Single-room air conditioning for guest accommodation'},
+  {room_type: 'deluxe', bed: '1 double bed 🛏 ', facilities:  '🛁 Private Bathroom, 😉 Free Wifi,📺 Flat Screen Tv, 🔉 soundproofing', other_facilities:  '⤵  Free toiletries, ⤵  Shower, ⤵ Toilet, ⤵ Towels ,⤵ TV, ⤵ Telephone,⤵  Fan, ⤵ Carpeted, ⤵ Cable channels, ⤵ Upper floors, ⤵ accessible by stairs only Toilet paper, ⤵ Single-room air conditioning for guest accommodation'},
   [
     {
         persons:  ' 🧖 🧖 ',
@@ -100,14 +99,6 @@ const rows = [
     cancellation: 'Free Cancellation',
     payment: 'NO PREPAYMENT NEEDED – pay at the property'
 },
-{
- persons:  ' 🧖 🧖 🧖  ',
- last_price: 6000, 
- new_price: 5900,
- breakfast: 'Superb_breakfast',
- cancellation: 'Free Cancellation',
- payment: 'NO PREPAYMENT NEEDED – pay at the property'
- },
 ],
      ),
 ];
@@ -126,28 +117,29 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Rooms</StyledTableCell>
-            <StyledTableCell align="center">Availabilty as per individuals</StyledTableCell>
+            <StyledTableCell width="30%">Rooms</StyledTableCell>
+            <StyledTableCell align="center" width="70%">Availabilty as per individuals</StyledTableCell> 
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.id}>
- <>
+               <>
               <StyledTableCell component="th" scope="row">
                   <Rooms row={row} />
               </StyledTableCell>
               </>
               {row.sleeps.map(sleep => <div>
                 <TableHead>
-          <TableRow>
-           
-            <TableCell align="center">Sleeps</TableCell>
-            <TableCell align="center">Today's Price</TableCell>
-            <TableCell align="center">Your's Choice</TableCell>
-            <TableCell align="center">Select</TableCell> 
-          </TableRow>
-        </TableHead>
+          <TableRow >
+           {/* style={{backgroundColor: "#1c1c1c"}}  */}
+           {/* style={{backgroundColor: "#1c1c1c", padding: "4px", color: "white"}} */}
+             <TableCell align="center"><b >Sleeps</b></TableCell>
+            <TableCell align="center"><b>Today's Price</b></TableCell>
+            <TableCell align="center"><b>Your's Choice</b></TableCell>
+            <TableCell align="center"><b>Select</b></TableCell> 
+          </TableRow> 
+         </TableHead> 
               <StyledTableCell  component="th" scope="row" >
                  <Sleeps sleep={sleep} />
                   </StyledTableCell>

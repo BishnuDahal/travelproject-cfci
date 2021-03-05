@@ -15,11 +15,11 @@ export default function FooterSocial({classes}) {
         <span>
       <Link to="/" target="_blank" rel="noopener noreferrer" 
       style={{border:"none", textDecoration:"none", backgroundColor: "transparent", margin: "4px"}}>
-      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png"  />
+      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png" alt="googleplay" />
         </Link>
         <Link to="/" target="_blank" rel="noopener noreferrer" 
       style={{border:"none", textDecoration:"none", backgroundColor: "transparent", margin: "4px"}}>
-      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png"  />
+      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png" alt="googleplay"  />
         </Link>
         </span>
       </div> <br />

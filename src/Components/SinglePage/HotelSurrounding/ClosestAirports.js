@@ -4,7 +4,6 @@ import LocalAirportIcon from '@material-ui/icons/LocalAirport';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 export default function NearbySection() {
     return (
         <div>
@@ -18,28 +17,28 @@ export default function NearbySection() {
         <List>
         <span style={{display: "flex", justifyContent: "space-around"}}>
             <ListItem>
-           <Typography  variant="body2" component="h2">Pokhara Airport</Typography>
+           <Typography  variant="body2" >Pokhara Airport</Typography>
               </ListItem>
               <ListItem>
-           <Typography  variant="body2" component="h2" color="textSecondary"> 0.6km</Typography>
+           <Typography  variant="body2"  color="textSecondary"> 0.6km</Typography>
               </ListItem>
             </span>
             <hr />
             <span style={{display: "flex", justifyContent: "space-around"}}>
             <ListItem>
-           <Typography  variant="body2" component="h2">Bharatpur Airport</Typography>
+           <Typography  variant="body2" >Bharatpur Airport</Typography>
               </ListItem>
               <ListItem>
-           <Typography  variant="body2" component="h2" color="textSecondary"> 0.6km</Typography>
+           <Typography  variant="body2"  color="textSecondary"> 0.6km</Typography>
               </ListItem>
             </span>
             <hr />
             <span style={{display: "flex", justifyContent: "space-around"}}>
             <ListItem>
-           <Typography  variant="body2" component="h2">Bhairawa Airport</Typography>
+           <Typography  variant="body2" >Bhairawa Airport</Typography>
               </ListItem>
               <ListItem>
-           <Typography  variant="body2" component="h2" color="textSecondary"> 0.6km</Typography>
+           <Typography  variant="body2"  color="textSecondary"> 0.6km</Typography>
               </ListItem>
             </span>
             <hr />
