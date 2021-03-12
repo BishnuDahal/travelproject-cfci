@@ -14,13 +14,13 @@ export default function GridListImage({classes, tile}) {
         <div>
          
           <div>
-            <SinglePageHeading classes={classes} tile={tile}/>
+            <SinglePageHeading  tile={tile}/>
           </div>
         
          <div>
-         <SimpleReactLightbox>
+         {/* <SimpleReactLightbox>
            <GridListImageContent classes={classes} tile={tile} />
-          </SimpleReactLightbox>
+          </SimpleReactLightbox> */}
            
             </div>
            

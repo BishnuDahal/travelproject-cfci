@@ -1,6 +1,6 @@
 {
   "name": "travel",
-  "proxy": "https://bigsafar.c4c.codes",
+  "proxy": "https://sbteam.c4c.codes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

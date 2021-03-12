@@ -34,7 +34,8 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
        margin: 'auto',
        padding: theme.spacing(5),
        color: "#fff",
-       // opacity: "0.5",
+       alignItems:  "center",
+        // opacity: "0.5",
    },
    landingformcontent: {
        margin: 'auto',
@@ -43,24 +44,21 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
    subtitle: {
         letterSpacing: "0.4px",
         padding: theme.spacing(1),
-        [theme.breakpoints.down('xs')]: {
-           display: 'none',
-         },
+        // [theme.breakpoints.down('xs')]: {
+        //    display: 'none',
+        //  },
    },
-   reservePageCard: {
+   buttonpannelroot: {
+    background: '#fff',
     maxWidth: '320px',
-    // width: "100%",
-    //  maxHeight: '800px',
-     padding: theme.spacing(3),
-     alignItems: "center",
-     background: '#fff',
-     borderRadius: '10px',
-     margin: 'auto',
-    //  textAlign: 'center',
- },
+    padding: theme.spacing(2),
+    alignItems: "center",
+    borderRadius: '10px',
+    margin: 'auto',
+   },
  reservecontent:{
    width: '98%',
-   padding: theme.spacing(1),
+  //  padding: theme.spacing(1),
  },
  reserveitem:{
    marginLeft:'auto',
@@ -80,12 +78,13 @@ const useTravelLandingPageStyles = makeStyles((theme) => ({
   paddingRight: theme.spacing(1),
   textAlign: 'center',
   marginRight: theme.spacing(1),
+ 
 },
 aboutbutton: {
   backgroundColor: '#f6a82f',
   borderRadius: '50%',
-  padding: '10px',
-},
+  padding: theme.spacing(1),
+}
 }))
 
 export default useTravelLandingPageStyles;

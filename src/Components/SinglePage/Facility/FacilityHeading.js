@@ -9,7 +9,7 @@ import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 export default function FacilityHeading({tile}) {
     return (
         <div>
-               <Typography  variant="h6" component="h2">2 Reasons to Choose {tile.title}</Typography><br/>
+               <Typography  variant="h6" component="h2">2 Reasons to Choose {tile.hotel_address}</Typography><br/>
             <span style={{display: "flex", background: "#f4af1f", padding: "8px" }}>
             <List>
               <ListItem>

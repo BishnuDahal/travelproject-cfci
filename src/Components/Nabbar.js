@@ -15,7 +15,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import { Link } from 'react-router-dom'
-import CardMedia from '@material-ui/core/CardMedia';
+// import CardMedia from '@material-ui/core/CardMedia';
 import PersonIcon from '@material-ui/icons/Person';
 
 
@@ -23,10 +23,13 @@ const drawerWidth = 240;
 
 const useNabbarStyles = makeStyles((theme) => ({
   navroot: {
-    position: 'relative',
+    position: 'sticky',
+    top: 0,
     flexGrow: 1,
     justifyContent: 'space-around',
-    margin: 'auto',
+    // backgroundColor: '#6099F5',
+
+   
   },
   menu_link: {
     textDecoration: 'none',
@@ -112,8 +115,8 @@ export default function ButtonAppBar() {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <div className= { root ? 'nav active' : 'nav' } >
-          {/* <CssBaseline />  */}
+    <div className= { root ? 'nav' : 'nav active' } >
+           <CssBaseline />  
     <div className={classes.navroot}>
       <AppBar position="static" color="transparent">
         <Toolbar>

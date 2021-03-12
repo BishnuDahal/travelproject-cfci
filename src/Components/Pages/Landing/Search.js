@@ -9,7 +9,6 @@ import { Field } from "formik";
 export default function SearchHotel({handleChange, values, setFieldValue}) {
     return ( 
       <>
-      <label>Search Country/Place</label><br/><br/>
         <Field
         fullWidth 
               type="search"
@@ -22,8 +21,7 @@ export default function SearchHotel({handleChange, values, setFieldValue}) {
               variant="outlined"
               component={TextField}
               disabled={false}
-              autoFocus={true}
-              autocomplete={false}
+              autoFocus={false}
               InputProps={{
               startAdornment: (
               <InputAdornment position="start">

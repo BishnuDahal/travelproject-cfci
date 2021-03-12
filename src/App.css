@@ -7,7 +7,7 @@ body {
 }
 .App {
   align-items: center;
-  overflow-x: hidden;
+   /* overflow-x: hidden;  */
 }
 .nav {
   width:100vw;
@@ -15,11 +15,10 @@ body {
   top: 0;
   margin-top: 6px;
   z-index: 999;
-  background-color: transparent;
+  background-color:#1c1c1c ;
 }
 .nav.active {
-  
-  background-color: #1c1c1c;
+  background-color: transparent;
 }
 .IconElement {
   color: "#f6a82f"
@@ -35,10 +34,11 @@ body {
 }  */
 
 .main_button {
-  background-image: linear-gradient(to right, #f4af2f, #f4af1f, #f29807, #f59430, #ffb732, #f59730, #f6a92f);
+  /* background-image: linear-gradient(to right, #f4af2f, #f4af1f, #f29807, #f59430, #ffb732, #f59730, #f6a92f); */
+  background-color: #f29807 !important;
   color: #000000;
   padding: 3px;
-  width: 50%;
+  width: 80%;
   display: flex !important;
   margin: auto !important;
 }
@@ -50,6 +50,10 @@ body {
   max-width: 75%;
   color: #f2f8fa; 
   padding: 5px;
+}
+.MuiTab-root {
+min-width: 100px !important;
+margin: auto !important;
 }
 .facebook_button {
   background-color: transparent;

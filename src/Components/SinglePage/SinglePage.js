@@ -24,9 +24,9 @@ console.log(tile, "sp")
         <div className={classes.singlepage}>
             <Grid container spacing={3}>
         <Grid item lg={4} sm={6} xs={12}>
-          <Paper className={classes.paper}>
+          {/* <Paper className={classes.paper}>
               <ReserveCardUnit classes={classesa} />
-          </Paper>
+          </Paper> */}
         </Grid>
 
         <Grid item lg={7} sm={6} xs={12}>
@@ -39,26 +39,26 @@ console.log(tile, "sp")
           </Paper>
         </Grid>
         <div>
-        <Grid item lg={10} sm={10} xs={12} style={{ margin: "auto" }}>
+          <Grid item lg={10} sm={10} xs={12} style={{ margin: "auto" }}>
         <Paper className={classes.paper} >
               <div>
                 <SinglePageTable />
               </div>
-              <div>
+              {/* <div>
                 <GuestReview tile={tile} />
-              </div>
+              </div> */}
               <div>
                 <HotelSurrounding classes={classes} />
               </div>
-              <div>
-                <Facilities classes={classes} tile={tile}/>
-              </div><br/>
+               <div>
+                 {/* <Facilities classes={classes} tile={tile} />  */}
+              </div><br/> 
              <div>
                <Typography variant="h6">Similar Properties NearBy You</Typography>
              <HotelList />
              </div>
         </Paper>
-        </Grid>
+        </Grid>  
         </div>
 
         </Grid>

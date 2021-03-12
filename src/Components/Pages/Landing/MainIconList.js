@@ -4,6 +4,7 @@ import Box from '@material-ui/core/Box';
 import LocalHotelTwoToneIcon from '@material-ui/icons/LocalHotelTwoTone';
 import FlightTwoToneIcon from '@material-ui/icons/FlightTwoTone';
 import ConfirmationNumberTwoToneIcon from '@material-ui/icons/ConfirmationNumberTwoTone';
+import { Link } from 'react-router-dom';
 
 const defaultProps = {
     bgcolor: 'background.paper',
@@ -21,7 +22,9 @@ export default function MainIconList({classes}) {
                   <LocalHotelTwoToneIcon className={classes.aboutbutton} fontSize="small" />
               </center><br/>
           </span>
+        
           <span className={classes.abouticon}><center><FlightTwoToneIcon className={classes.aboutbutton}  fontSize="small" /></center><br/></span>
+         
           <span className={classes.abouticon}><center><ConfirmationNumberTwoToneIcon className={classes.aboutbutton}  fontSize="small" /></center><br/></span>
       </Box>
             <Typography variant="h6"> Find the Best Hotel </Typography>

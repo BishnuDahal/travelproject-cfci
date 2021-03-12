@@ -130,7 +130,7 @@ const LoginForm = () => {
          </span>
          <Link href="false" target="_blank" rel="noopener noreferrer" 
       style={{border:"none", textDecoration:"none", backgroundColor: "transparent"}}>
-      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png"  />
+      <img src="https://www.niftybuttons.com/googleplay/googleplay-button1.png"  alt=''/>
         </Link>
          </div>
          </div>

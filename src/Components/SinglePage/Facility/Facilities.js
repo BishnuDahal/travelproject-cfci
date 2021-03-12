@@ -8,7 +8,7 @@ export default function Facilities({classes, tile}) {
     return (
         <div>
         <div className={classes.facilties}>
-            <FacilityHeading tile={tile} />
+            <FacilityHeading  />
         </div><br/>
         <div>
             <PopularFacilty />

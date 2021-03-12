@@ -32,9 +32,9 @@ export default function AboutLeft({classes}) {
       <Link to="/" style={{textDecoration:"none", fontSize:"16px", color:"#010101"}}><b>Link Here</b><ArrowRightAltIcon style={{ fontSize: 20 }} /></Link><br/><br/><br/>
 
       <Box display="flex" flexWrap="nowrap">
-          <span className={classes.abouticon} ><center><LocalHotelTwoToneIcon className={classes.aboutbutton} fontSize="small" /></center><br/><b>Hotels and Check</b></span>
-          <span className={classes.abouticon}><center><FlightTwoToneIcon className={classes.aboutbutton}  fontSize="small" /></center><br/><b>Flights and Reserve</b></span>
-          <span className={classes.abouticon}><center><ConfirmationNumberTwoToneIcon className={classes.aboutbutton}  fontSize="small" /></center><br/><b>Hot Deals and Offers</b></span>
+          <span className={classes.abouticon} ><center><LocalHotelTwoToneIcon className={classes.aboutbutton} fontSize="large" /></center><br/><b>Hotels and Check</b></span>
+          <span className={classes.abouticon}><center><FlightTwoToneIcon className={classes.aboutbutton}  fontSize="large" /></center><br/><b>Flights and Reserve</b></span>
+          <span className={classes.abouticon}><center><ConfirmationNumberTwoToneIcon className={classes.aboutbutton}  fontSize="large" /></center><br/><b>Hot Deals and Offers</b></span>
       </Box>
       </div>
 

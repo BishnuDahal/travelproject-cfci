@@ -11,7 +11,7 @@ export default function GuestReview({tile}) {
             <div>
                 <GuestReviewCard tile={tile}/>
             </div>
-            <Button color= "primary" variant= "outlined" size="small"> Read All Reviews </Button>
+            <Button color= "primary" variant= "contained" size="small"> Read All Reviews </Button>
         </div>
     )
 }

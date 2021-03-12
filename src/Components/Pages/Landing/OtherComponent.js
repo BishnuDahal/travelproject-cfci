@@ -15,7 +15,7 @@ export default function OtherComponent() {
         },
         defaultValue: 1,
     }}
-    style={{width: 96, margin: "10px 10px 0px 0px"}}
+    style={{width: 83, margin: "10px 10px 0px 0px"}}
     size="small"
     
 /> </div>{""}
@@ -30,9 +30,8 @@ export default function OtherComponent() {
         },
         defaultValue: 0,
     }}
-    style={{width: 96, margin: "10px 10px 0px 0px"}}
+    style={{width: 83, margin: "10px 10px 0px 0px"}}
     size="small"
- 
 /></div> {""}
 <div>
     <left><label>Rooms</label></left><br/>
@@ -45,9 +44,8 @@ export default function OtherComponent() {
         },
         defaultValue: 1,
     }}
-    style={{width: 96, margin: "10px 10px 0px 0px"}}
+    style={{width: 83, margin: "10px 10px 0px 0px"}}
     size="small"
-    
 />
 </div>
         </div>
