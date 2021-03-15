@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import SinglePage from './SinglePage'
+import SinglePage from '../../Pages/SinglePage/SinglePage'
 import axios from 'axios';
 
 
